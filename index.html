@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE PALACE — Elite Software Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo" aria-label="THE PALACE Home">
+        <!-- Pure CSS geometric logo -->
+        <div class="css-logo" aria-hidden="true">
+          <div class="logo-shape logo-sq"></div>
+          <div class="logo-shape logo-tri"></div>
+          <div class="logo-shape logo-circ"></div>
+        </div>
+        <span class="logo-text">THE PALACE</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Manifesto</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--3" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>ICT University · Class of 2026</span>
+        </div>
+        <h1 class="hero-headline">
+          <span class="line line--1">THE</span>
+          <span class="line line--2">PALACE</span>
+        </h1>
+        <p class="hero-sub">
+          A collective of elite software engineers and creators<br />
+          pushing the boundaries of the web.
+        </p>
+        <a href="#projects" class="btn btn--primary hero-cta">
+          <span>Explore Our Work</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <div class="hero-stats" aria-label="Quick stats">
+          <div class="stat">
+            <span class="stat-num">10</span>
+            <span class="stat-label">Engineers</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Live Projects</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Ambition</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ░░ ABOUT / MANIFESTO ░░ -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line" aria-hidden="true"></span>
+          <span>Our Manifesto</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-heading">We didn't find each other.<br />The code brought us together.</h2>
+            <p class="about-body">
+              Forged in the lecture halls of <strong>The ICT University</strong>, ten minds converged over late-night debugging sessions, shared terminals, and relentless ambition. What began as classmates became a brotherhood bound by one common drive — to become <em>world-class engineers</em>.
+            </p>
+            <p class="about-body">
+              The Palace is not a team. It is a standard. We build, ship, and iterate with precision. Every line of code is a declaration: we are here, we are capable, and we are just getting started.
+            </p>
+            <blockquote class="manifesto-quote">
+              "Excellence is not a skill. It is an attitude cultivated daily."
+            </blockquote>
+          </div>
+
+          <div class="skills-grid" role="list" aria-label="Core competencies">
+            <div class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Modern JavaScript</h3>
+              <p>ES2024+, async patterns, Node.js, TypeScript, and beyond.</p>
+            </div>
+            <div class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3>HTML5 &amp; CSS3</h3>
+              <p>Semantic markup, animations, Grid, Flexbox, and custom properties.</p>
+            </div>
+            <div class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3>Linux Systems</h3>
+              <p>Bash scripting, process management, server administration, and DevOps fundamentals.</p>
+            </div>
+            <div class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+              </div>
+              <h3>Git &amp; Version Control</h3>
+              <p>Branching strategies, CI/CD pipelines, open-source collaboration workflows.</p>
+            </div>
+            <div class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+              </div>
+              <h3>Database Management</h3>
+              <p>PostgreSQL, MySQL, MongoDB, query optimization, and schema design.</p>
+            </div>
+            <div class="skill-card skill-card--accent" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3>Systems Thinking</h3>
+              <p>Architecture design, performance engineering, and scalable solution patterns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ TEAM ░░ -->
+    <section class="team" id="team">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line" aria-hidden="true"></span>
+          <span>Meet the Team</span>
+        </div>
+        <h2 class="section-heading section-heading--center">Ten minds.<br />One vision.</h2>
+        <p class="section-subtext">Each member brings a distinct craft. Together we ship.</p>
+
+        <div class="team-grid">
+
+          <!-- Nopole Flairan Favor — Team Lead -->
+          <article class="member-card member-card--lead">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">NF</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="member-badge">Team Lead</div>
+            <h3 class="member-name">Nopole Flairan Favor</h3>
+            <p class="member-role">Full-Stack Architect &amp; Technical Director</p>
+            <p class="member-bio">Orchestrates the collective's technical vision. Specialises in distributed systems and leading high-performance engineering teams.</p>
+            <div class="member-tags">
+              <span>Node.js</span><span>React</span><span>AWS</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:favor@thepalace.com" class="member-link" aria-label="Email Favor">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Favor's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Favor's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tayong Fritz -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">TF</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Tayong Fritz</h3>
+            <p class="member-role">Backend Engineer &amp; API Specialist</p>
+            <p class="member-bio">Designs robust RESTful and GraphQL APIs. Passionate about database optimisation and microservice architectures.</p>
+            <div class="member-tags">
+              <span>Python</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:fritz@thepalace.com" class="member-link" aria-label="Email Fritz">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Fritz's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Fritz's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Joshua Tiffman -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">JT</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Joshua Tiffman</h3>
+            <p class="member-role">Frontend Engineer &amp; UI Systems Lead</p>
+            <p class="member-bio">Crafts pixel-perfect interfaces and maintainable design systems. Advocates for accessibility and fluid user experiences.</p>
+            <div class="member-tags">
+              <span>React</span><span>CSS3</span><span>Figma</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:joshua@thepalace.com" class="member-link" aria-label="Email Joshua">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Joshua's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Joshua's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Levi Beans -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">LB</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Levi Beans</h3>
+            <p class="member-role">DevOps Engineer &amp; Infrastructure Architect</p>
+            <p class="member-bio">Automates deployment pipelines and manages cloud infrastructure. Keeps everything running fast, secure, and resilient.</p>
+            <div class="member-tags">
+              <span>Linux</span><span>Kubernetes</span><span>Terraform</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:levi@thepalace.com" class="member-link" aria-label="Email Levi">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Levi's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Levi's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tevez Money -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">TM</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Tevez Money</h3>
+            <p class="member-role">Mobile Developer &amp; Cross-Platform Engineer</p>
+            <p class="member-bio">Builds high-performance mobile applications. Expert in React Native and Flutter with a keen eye for smooth native experiences.</p>
+            <div class="member-tags">
+              <span>React Native</span><span>Flutter</span><span>Swift</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:tevez@thepalace.com" class="member-link" aria-label="Email Tevez">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Tevez's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Tevez's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Mallam Afise -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">MA</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Mallam Afise</h3>
+            <p class="member-role">Data Engineer &amp; ML Practitioner</p>
+            <p class="member-bio">Transforms raw data into actionable intelligence. Builds ML pipelines and data warehouses that power business decisions.</p>
+            <div class="member-tags">
+              <span>Python</span><span>TensorFlow</span><span>Spark</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:mallam@thepalace.com" class="member-link" aria-label="Email Mallam">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Mallam's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Mallam's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Bakala Mills -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">BM</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Bakala Mills</h3>
+            <p class="member-role">Cybersecurity Engineer &amp; Penetration Tester</p>
+            <p class="member-bio">Secures systems from the ground up. Conducts threat modelling and ensures the collective's projects are fortified against attacks.</p>
+            <div class="member-tags">
+              <span>Kali Linux</span><span>OWASP</span><span>Networking</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:bakala@thepalace.com" class="member-link" aria-label="Email Bakala">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Bakala's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Bakala's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Prince Huncho -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">PH</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Prince Huncho</h3>
+            <p class="member-role">Software Architect &amp; Systems Designer</p>
+            <p class="member-bio">Translates complex requirements into elegant technical blueprints. Champions clean code principles and long-term scalability.</p>
+            <div class="member-tags">
+              <span>Java</span><span>Spring Boot</span><span>DDD</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:prince@thepalace.com" class="member-link" aria-label="Email Prince">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Prince's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Prince's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Khandy Sugarboi -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">KS</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Khandy Sugarboi</h3>
+            <p class="member-role">Creative Technologist &amp; Motion Engineer</p>
+            <p class="member-bio">Bridges the gap between design and code. Creates immersive web experiences with advanced animations and interactive storytelling.</p>
+            <div class="member-tags">
+              <span>WebGL</span><span>GSAP</span><span>Three.js</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:khandy@thepalace.com" class="member-link" aria-label="Email Khandy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Khandy's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Khandy's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Larry Du Buzz -->
+          <article class="member-card">
+            <div class="member-avatar" aria-hidden="true">
+              <span class="avatar-initials">LD</span>
+              <div class="avatar-ring"></div>
+            </div>
+            <h3 class="member-name">Larry Du Buzz</h3>
+            <p class="member-role">Open-Source Evangelist &amp; Tooling Engineer</p>
+            <p class="member-bio">Builds developer tools that make everyone else's work faster. Deep expertise in CLI design, Git internals, and build tooling.</p>
+            <div class="member-tags">
+              <span>Rust</span><span>CLI</span><span>Git</span>
+            </div>
+            <div class="member-links">
+              <a href="mailto:larry@thepalace.com" class="member-link" aria-label="Email Larry">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Larry's GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Larry's LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ PROJECTS ░░ -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line" aria-hidden="true"></span>
+          <span>Featured Projects</span>
+        </div>
+        <h2 class="section-heading">What we ship.</h2>
+        <p class="section-subtext">Case studies from our most impactful work — built with intent, shipped with precision.</p>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card project-card--featured">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-number" aria-hidden="true">01</div>
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View live site">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                  <a href="#" class="project-link-icon" aria-label="View source code">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-name">NexusFlow</h3>
+              <p class="project-type">Enterprise Workflow Automation Platform</p>
+              <p class="project-desc">
+                A full-scale SaaS platform enabling businesses to visually design, automate, and monitor multi-step operational workflows. Features real-time collaboration, conditional logic branching, webhook integrations, and a role-based access control system. Handles over 500K events per day in production.
+              </p>
+              <ul class="project-stack" aria-label="Tech stack">
+                <li>Node.js</li><li>React</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>AWS</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-number" aria-hidden="true">02</div>
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View live site">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                  <a href="#" class="project-link-icon" aria-label="View source code">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-name">QueryForge</h3>
+              <p class="project-type">Intelligent Database Wrapper &amp; ORM Layer</p>
+              <p class="project-desc">
+                An open-source, type-safe database abstraction layer for JavaScript and TypeScript. Supports PostgreSQL, MySQL, and SQLite with a fluent query builder, automatic migration generation, and query performance analytics. Adopted by 1,200+ developers worldwide with 4.8k GitHub stars.
+              </p>
+              <ul class="project-stack" aria-label="Tech stack">
+                <li>TypeScript</li><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>Jest</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-number" aria-hidden="true">03</div>
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View live site">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                  <a href="#" class="project-link-icon" aria-label="View source code">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-name">VaultShield</h3>
+              <p class="project-type">Zero-Trust Security &amp; Secrets Management System</p>
+              <p class="project-desc">
+                A self-hosted secrets manager and access control system designed for startups and dev teams. Features end-to-end encryption, dynamic credentials, audit trail logging, and a Slack/Teams integration for access request approvals. Built as a lean alternative to enterprise vault solutions.
+              </p>
+              <ul class="project-stack" aria-label="Tech stack">
+                <li>Go</li><li>AES-256</li><li>Linux</li><li>MongoDB</li><li>Terraform</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-number" aria-hidden="true">04</div>
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View live site">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                  <a href="#" class="project-link-icon" aria-label="View source code">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-name">PulseBoard</h3>
+              <p class="project-type">Real-Time Analytics Dashboard &amp; Data Visualisation Engine</p>
+              <p class="project-desc">
+                A live analytics web application that ingests event streams and renders customizable dashboards for product and growth teams. Features drag-and-drop widget configuration, multi-source data connectors, threshold-based alerting, and PDF report exports.
+              </p>
+              <ul class="project-stack" aria-label="Tech stack">
+                <li>React</li><li>WebSockets</li><li>Apache Kafka</li><li>ClickHouse</li><li>D3.js</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-label section-label--center">
+          <span class="label-line" aria-hidden="true"></span>
+          <span>Get In Touch</span>
+          <span class="label-line" aria-hidden="true"></span>
+        </div>
+        <h2 class="section-heading section-heading--center">Build something<br /><em>extraordinary</em> with us.</h2>
+        <p class="contact-sub">
+          Whether you have a project idea, a collaboration proposal, or just want to say hello — our inbox is always open.
+        </p>
+
+        <a href="mailto:contact@thepalace.com" class="contact-email-hero" aria-label="Send email to The Palace">
+          contact@thepalace.com
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+
+        <div class="contact-divider" aria-hidden="true">
+          <span></span>
+          <span class="divider-label">Individual contacts</span>
+          <span></span>
+        </div>
+
+        <div class="contact-grid" aria-label="Individual member emails">
+          <a href="mailto:favor@thepalace.com" class="contact-card">
+            <span class="contact-initials">NF</span>
+            <div>
+              <span class="contact-name">Nopole Flairan Favor</span>
+              <span class="contact-addr">favor@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:fritz@thepalace.com" class="contact-card">
+            <span class="contact-initials">TF</span>
+            <div>
+              <span class="contact-name">Tayong Fritz</span>
+              <span class="contact-addr">fritz@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:joshua@thepalace.com" class="contact-card">
+            <span class="contact-initials">JT</span>
+            <div>
+              <span class="contact-name">Joshua Tiffman</span>
+              <span class="contact-addr">joshua@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:levi@thepalace.com" class="contact-card">
+            <span class="contact-initials">LB</span>
+            <div>
+              <span class="contact-name">Levi Beans</span>
+              <span class="contact-addr">levi@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:tevez@thepalace.com" class="contact-card">
+            <span class="contact-initials">TM</span>
+            <div>
+              <span class="contact-name">Tevez Money</span>
+              <span class="contact-addr">tevez@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:mallam@thepalace.com" class="contact-card">
+            <span class="contact-initials">MA</span>
+            <div>
+              <span class="contact-name">Mallam Afise</span>
+              <span class="contact-addr">mallam@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:bakala@thepalace.com" class="contact-card">
+            <span class="contact-initials">BM</span>
+            <div>
+              <span class="contact-name">Bakala Mills</span>
+              <span class="contact-addr">bakala@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:prince@thepalace.com" class="contact-card">
+            <span class="contact-initials">PH</span>
+            <div>
+              <span class="contact-name">Prince Huncho</span>
+              <span class="contact-addr">prince@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:khandy@thepalace.com" class="contact-card">
+            <span class="contact-initials">KS</span>
+            <div>
+              <span class="contact-name">Khandy Sugarboi</span>
+              <span class="contact-addr">khandy@thepalace.com</span>
+            </div>
+          </a>
+          <a href="mailto:larry@thepalace.com" class="contact-card">
+            <span class="contact-initials">LD</span>
+            <div>
+              <span class="contact-name">Larry Du Buzz</span>
+              <span class="contact-addr">larry@thepalace.com</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="css-logo css-logo--sm" aria-hidden="true">
+          <div class="logo-shape logo-sq"></div>
+          <div class="logo-shape logo-tri"></div>
+          <div class="logo-shape logo-circ"></div>
+        </div>
+        <span class="logo-text logo-text--sm">THE PALACE</span>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 The Palace Collective. Built with intent at The ICT University.
+      </p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">Manifesto</a>
+        <a href="#team">Team</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu if open
+          document.getElementById('navLinks').classList.remove('nav-links--open');
+          document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('nav-links--open');
+      toggle.setAttribute('aria-expanded', isOpen.toString());
+    });
+
+    // Sticky nav shadow
+    const nav = document.querySelector('.nav-wrapper');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-wrapper--scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(
+      '.skill-card, .member-card, .project-card, .contact-card, .about-text, .section-heading'
+    ).forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
